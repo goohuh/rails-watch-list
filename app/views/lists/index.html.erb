@@ -1,0 +1,15 @@
+<h1>Lists#index</h1>
+
+<div class="container">
+<ul class="list-group">
+    <% @lists.each do |list| %>
+    <li>
+      <div>
+        <%= link_to list_path(list), style: 'text-decoration: none' do %><%= list.name %>
+        <% end %>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <p><br><%= link_to "Create a list", new_list_path %></p>
+</div>
