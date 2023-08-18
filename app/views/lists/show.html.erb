@@ -1,5 +1,5 @@
 <h1>Lists#<%= @list.name %></h1>
-
+<div><%= cl_image_tag @list.photo.key, height: 400, width: 400, crop: :fill %></div>
 <div class="container">
 <ul class="list-group">
     <% @list.bookmarks.each do |bookmark| %>
